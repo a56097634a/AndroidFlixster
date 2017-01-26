@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout"
+        android:layout_alignParentEnd="true">
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/player"
+            android:layout_marginTop="24dp" />
+    </FrameLayout>
+
+    <TextView
+        tools:text="A store is what holds the data of an application. Stores will register with the application's dispatcher so that they can receive actions. The data in a store must only be mutated by responding to an action. There should not be any public setters on a store, only getters. Stores decide what actions they want to respond to. Every time a store's data changes it must emit a &quot;change&quot; event. There should be many stores in each application."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/overview"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        tools:text="Release Date: dfsa fsg fsgd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/releaseDate"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ratingBar"
+        android:numStars="5"
+        tools:rating="3.25"
+        android:layout_below="@+id/releaseDate"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        tools:text="Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
